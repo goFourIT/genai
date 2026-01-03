@@ -1,8 +1,18 @@
 version: "3.8"
 services:
+  ollama:
+    image: ollama/ollama:latest
+    container_name: ollama
+    ports:
+      - "11434:11434"
+    volumes:
+      - ollama_data:/root/.ollama
+    networks:
+      - my-network
+    restart: unless-stopped
   qdrant:
     image: qdrant/qdrant:latest
-    container_name: semanticsearch_qdrant
+    container_name: qdrant
     ports:
       - "6333:6333"
       - "6334:6334"
@@ -13,6 +23,8 @@ services:
     restart: unless-stopped
 
 volumes:
+  ollama_data:
+    driver: local
   qdrant_storage:
     driver: local
 
