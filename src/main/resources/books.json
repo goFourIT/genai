@@ -1,0 +1,142 @@
+[
+  {
+    "id": 1,
+    "title": "Nineteen Eighty-Four",
+    "author": "George Orwell",
+    "numberOfPages": 328,
+    "description": "A dystopian novel exploring surveillance, totalitarianism, and the erosion of truth in a society ruled by an omnipresent authoritarian regime."
+  },
+  {
+    "id": 2,
+    "title": "Pride and Prejudice",
+    "author": "Jane Austen",
+    "numberOfPages": 279,
+    "description": "A classic romantic novel that examines social class, marriage, and personal growth through sharp wit and memorable characters."
+  },
+  {
+    "id": 3,
+    "title": "Sapiens: A Brief History of Humankind",
+    "author": "Yuval Noah Harari",
+    "numberOfPages": 498,
+    "description": "A sweeping history of humankind that connects biology, anthropology, and history to explain how societies evolved."
+  },
+  {
+    "id": 4,
+    "title": "Dune",
+    "author": "Frank Herbert",
+    "numberOfPages": 412,
+    "description": "An epic science fiction story about politics, religion, ecology, and power struggles on a desert planet called Arrakis."
+  },
+  {
+    "id": 5,
+    "title": "The Hobbit",
+    "author": "J.R.R. Tolkien",
+    "numberOfPages": 423,
+    "description": "A fantasy adventure following a reluctant hero who embarks on a journey that shapes the fate of an entire world."
+  },
+  {
+    "id": 6,
+    "title": "One Hundred Years of Solitude",
+    "author": "Gabriel García Márquez",
+    "numberOfPages": 417,
+    "description": "A magical realism masterpiece chronicling generations of a family, blending myth, memory, and history."
+  },
+  {
+    "id": 7,
+    "title": "Meditations",
+    "author": "Marcus Aurelius",
+    "numberOfPages": 256,
+    "description": "A collection of personal philosophical reflections on stoicism, duty, self-discipline, and the nature of life."
+  },
+  {
+    "id": 8,
+    "title": "Foundation",
+    "author": "Isaac Asimov",
+    "numberOfPages": 244,
+    "description": "A foundational science fiction novel exploring the rise and fall of civilizations through mathematics and prediction."
+  },
+  {
+    "id": 9,
+    "title": "To Kill a Mockingbird",
+    "author": "Harper Lee",
+    "numberOfPages": 336,
+    "description": "A powerful story about justice, race, and moral growth seen through the eyes of a child in the American South."
+  },
+  {
+    "id": 10,
+    "title": "The Shining",
+    "author": "Stephen King",
+    "numberOfPages": 497,
+    "description": "A psychological horror novel that delves into isolation, madness, and the supernatural within a haunted hotel."
+  },
+  {
+    "id": 11,
+    "title": "The Stranger",
+    "author": "Albert Camus",
+    "numberOfPages": 159,
+    "description": "A philosophical novel exploring absurdism, existentialism, and the emotional detachment of its protagonist."
+  },
+  {
+    "id": 12,
+    "title": "Outliers",
+    "author": "Malcolm Gladwell",
+    "numberOfPages": 336,
+    "description": "An exploration of human behavior, decision-making, and the hidden patterns that shape success and failure."
+  },
+  {
+    "id": 13,
+    "title": "The Hitchhiker’s Guide to the Galaxy",
+    "author": "Douglas Adams",
+    "numberOfPages": 224,
+    "description": "A humorous science fiction adventure blending absurdity, satire, and cosmic travel across the universe."
+  },
+  {
+    "id": 14,
+    "title": "Frankenstein",
+    "author": "Mary Shelley",
+    "numberOfPages": 280,
+    "description": "A gothic novel that examines creation, responsibility, and humanity through a tragic scientific experiment."
+  },
+  {
+    "id": 15,
+    "title": "The Art of War",
+    "author": "Sun Tzu",
+    "numberOfPages": 112,
+    "description": "A concise military strategy treatise offering timeless insights into leadership, planning, and conflict."
+  },
+  {
+    "id": 16,
+    "title": "The Kite Runner",
+    "author": "Khaled Hosseini",
+    "numberOfPages": 371,
+    "description": "An emotional novel about friendship, guilt, and redemption set against decades of political turmoil."
+  },
+  {
+    "id": 17,
+    "title": "American Gods",
+    "author": "Neil Gaiman",
+    "numberOfPages": 465,
+    "description": "A modern fantasy weaving mythology, gods, and contemporary America into a richly imaginative narrative."
+  },
+  {
+    "id": 18,
+    "title": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "numberOfPages": 180,
+    "description": "A tragic tale of ambition, wealth, and illusion during the Jazz Age, centered on the American Dream."
+  },
+  {
+    "id": 19,
+    "title": "The Demon-Haunted World",
+    "author": "Carl Sagan",
+    "numberOfPages": 384,
+    "description": "A science-focused book encouraging critical thinking, skepticism, and curiosity about the universe."
+  },
+  {
+    "id": 20,
+    "title": "The Alchemist",
+    "author": "Paulo Coelho",
+    "numberOfPages": 208,
+    "description": "A philosophical novel about self-discovery, destiny, and following one’s personal legend."
+  }
+]
