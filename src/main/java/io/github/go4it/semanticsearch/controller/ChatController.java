@@ -21,4 +21,9 @@ public class ChatController {
     ResponseEntity<String> sendMessage(@RequestBody String message) {
         return ResponseEntity.ok(this.chatService.sendMessage(message));
     }
+
+    @PostMapping("/send-business-message")
+    ResponseEntity<String> sendBusinessMessage(@RequestBody String message) {
+        return ResponseEntity.ok(this.chatService.sendBusinessMessage(message));
+    }
 }
