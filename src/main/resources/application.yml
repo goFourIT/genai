@@ -1,0 +1,16 @@
+spring:
+  ai:
+    ollama:
+      base-url: http://localhost:11434
+      chat:
+        model: llama3.2:3b
+      embedding:
+        model: nomic-embed-text
+    vectorstore:
+      qdrant:
+        host: localhost
+        port: 6334
+        api-key:
+        collection-name: books
+        use-tls: false
+        initialize-schema: true
