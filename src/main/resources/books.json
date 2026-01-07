@@ -138,5 +138,26 @@
     "author": "Paulo Coelho",
     "numberOfPages": 208,
     "description": "A philosophical novel about self-discovery, destiny, and following one’s personal legend."
+  },
+  {
+    "id": 21,
+    "title": "The Witcher: The Last Wish",
+    "author": "Andrzej Sapkowski",
+    "numberOfPages": 288,
+    "description": "A collection of short stories introducing Geralt of Rivia, a professional monster hunter known as a witcher. The book explores moral ambiguity, destiny, and the cost of neutrality in a world where humans, monsters, and magic coexist. Each story presents a self-contained adventure while slowly building the foundation of Geralt's character and the Witcher universe."
+  },
+  {
+    "id": 22,
+    "title": "The Witcher: Sword of Destiny",
+    "author": "Andrzej Sapkowski",
+    "numberOfPages": 384,
+    "description": "Continuing Geralt’s journey, this collection of interconnected short stories deepens the themes of fate, choice, and humanity. The book introduces key characters such as Ciri and Yennefer in greater depth, showing how destiny binds lives together. It serves as a bridge between the episodic stories and the main Witcher saga."
+  },
+  {
+    "id": 23,
+    "title": "The Witcher: Blood of Elves",
+    "author": "Andrzej Sapkowski",
+    "numberOfPages": 320,
+    "description": "The first novel of the Witcher saga proper, focusing on Geralt’s role as guardian and mentor to Ciri, a child of prophecy. Political intrigue, racial tensions, and the looming threat of war shape the world around them. The story shifts from isolated adventures to a broader, interconnected narrative about power, destiny, and survival."
   }
 ]
