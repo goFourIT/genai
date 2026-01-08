@@ -30,14 +30,16 @@ public class LogAdvisor implements CallAdvisor {
 
     @Override
     public int getOrder() {
-        return Ordered.HIGHEST_PRECEDENCE;
+        return Ordered.LOWEST_PRECEDENCE - 1;
     }
 
     private void logRequest(ChatClientRequest request) {
-        logger.debug("Request is: {}", request);
+        logger.debug("----- REQUEST IS -----");
+        logger.debug(request.prompt().getContents());
     }
 
     private void logResponse(ChatClientResponse response) {
-        logger.debug("Response is: {}", response);
+        logger.debug("----- RESPONSE IS -----");
+        logger.debug(response.chatResponse().toString());
     }
 }

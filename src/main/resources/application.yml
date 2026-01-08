@@ -14,3 +14,8 @@ spring:
         collection-name: books
         use-tls: false
         initialize-schema: true
+logging:
+  level:
+    io.github.go4it.semanticsearch:
+      advisor:
+        LogAdvisor: DEBUG
