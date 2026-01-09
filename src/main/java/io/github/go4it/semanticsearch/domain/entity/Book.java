@@ -1,6 +1,12 @@
-package io.github.go4it.semanticsearch.domain;
+package io.github.go4it.semanticsearch.domain.entity;
 
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+
+@Entity
 public class Book {
+    @Id
+    private String id;
     private String title;
     private String author;
     private Integer numberOfPages;

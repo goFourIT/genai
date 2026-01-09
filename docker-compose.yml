@@ -21,11 +21,26 @@ services:
     networks:
       - my-network
     restart: unless-stopped
+  postgres:
+    image: postgres:15-alpine
+    container_name: postgres
+    environment:
+      POSTGRES_DB: mydatabase
+      POSTGRES_USER: myuser
+      POSTGRES_PASSWORD: mypassword
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_storage:/var/lib/postgresql/data
+    networks:
+      - my-network
 
 volumes:
   ollama_data:
     driver: local
   qdrant_storage:
+    driver: local
+  postgres_storage:
     driver: local
 
 networks:

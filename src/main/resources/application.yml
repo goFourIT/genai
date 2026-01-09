@@ -14,6 +14,17 @@ spring:
         collection-name: books
         use-tls: false
         initialize-schema: true
+  datasource:
+    url: jdbc:postgresql://localhost:5432/mydatabase
+    username: myusername
+    password: mypassword
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: update
+      format_sql: true
+
 logging:
   level:
     io.github.go4it.semanticsearch:

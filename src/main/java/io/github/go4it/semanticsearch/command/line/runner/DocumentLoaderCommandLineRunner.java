@@ -2,7 +2,7 @@ package io.github.go4it.semanticsearch.command.line.runner;
 
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import io.github.go4it.semanticsearch.domain.Book;
+import io.github.go4it.semanticsearch.domain.entity.Book;
 import org.springframework.ai.document.Document;
 import org.springframework.ai.vectorstore.VectorStore;
 import org.springframework.beans.factory.annotation.Value;
