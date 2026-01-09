@@ -16,7 +16,7 @@ spring:
         initialize-schema: true
   datasource:
     url: jdbc:postgresql://localhost:5432/mydatabase
-    username: myusername
+    username: myuser
     password: mypassword
     driver-class-name: org.postgresql.Driver
   jpa:
