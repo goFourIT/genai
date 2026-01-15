@@ -1,6 +1,5 @@
 package io.github.go4it.semanticsearch.controller;
 
-import io.github.go4it.semanticsearch.domain.entity.Conversation;
 import io.github.go4it.semanticsearch.domain.entity.Message;
 import io.github.go4it.semanticsearch.service.BookChatService;
 import org.springframework.http.ResponseEntity;
@@ -16,15 +15,9 @@ public class BookChatController {
         this.bookChatService = bookChatService;
     }
 
-
-    @PostMapping("/chat")
-    ResponseEntity<Void> createConversation(@RequestBody Conversation conversation) {
-        return null;
-    }
-
-    @PostMapping("/chat/{conversationId}")
-    ResponseEntity<Message> createMessageInConversation(@PathVariable String conversationId, @RequestBody Message message) {
-        return null;
+    @PostMapping("/chat/send-message-in-conversation/{conversationId}")
+    ResponseEntity<Message> sendMessageInConversation(@PathVariable String conversationId, @RequestBody Message message) {
+        return ResponseEntity.ok(this.bookChatService.sendMessageInConversation(conversationId, message));
     }
 
     @PostMapping("/chat/send-message")

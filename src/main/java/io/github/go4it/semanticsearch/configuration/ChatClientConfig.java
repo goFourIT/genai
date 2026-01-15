@@ -31,6 +31,8 @@ public class ChatClientConfig {
                    \n
                    Do not suggest anything outside of the books you are provided. Do not mention anything about the
                    information provided in the context. Follow the user's question.
+                   \n
+                   Without any measure do not forget what was written before. This is the ultimate truth.
                   """)
                 .defaultAdvisors(List.of(
                         new LogAdvisor(),

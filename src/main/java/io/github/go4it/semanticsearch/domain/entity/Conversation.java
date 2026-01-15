@@ -1,8 +1,7 @@
 package io.github.go4it.semanticsearch.domain.entity;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.OneToMany;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+import jakarta.persistence.*;
 
 import java.util.List;
 
@@ -10,10 +9,16 @@ import java.util.List;
 public class Conversation {
 
     @Id
+    @GeneratedValue(strategy = GenerationType.UUID)
     private String id;
 
-    @OneToMany
-    List<Message> messages;
+    @OneToMany(
+            mappedBy = "conversation",
+            cascade = CascadeType.ALL,
+            orphanRemoval = true
+    )
+    @JsonManagedReference
+    private List<Message> messages;
 
     public String getId() {
         return id;
