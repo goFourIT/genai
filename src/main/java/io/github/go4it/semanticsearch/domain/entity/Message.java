@@ -10,6 +10,8 @@ public class Message {
     @GeneratedValue(strategy = GenerationType.UUID)
     private String id;
 
+    @Lob
+    @Column
     private String content;
 
     @ManyToOne
