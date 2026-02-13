@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class SemanticsearchApplication {
+public class GenAiAppliction {
 
 	public static void main(String[] args) {
-		SpringApplication.run(SemanticsearchApplication.class, args);
+		SpringApplication.run(GenAiAppliction.class, args);
 	}
 
 }
