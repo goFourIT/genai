@@ -11,14 +11,16 @@ import org.springframework.ai.vectorstore.VectorStore;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Profile;
 
 import java.util.List;
 
 @Configuration
-public class LibrarianChatClientConfig {
+@Profile("ollama")
+public class OllamaLibrarianChatClientConfig {
 
     @Bean
-    @Qualifier("librarianChatOptions")
+    @Qualifier("OllamaLibrarianChatOptions")
     public ChatOptions librarianChatOptions() {
         return OllamaChatOptions.builder()
                 .temperature(0.2) // a low value means a response more strict
@@ -27,7 +29,7 @@ public class LibrarianChatClientConfig {
     }
 
     @Bean
-    @Qualifier("librarianSystemPromptTemplate")
+    @Qualifier("OllamaLibrarianSystemPromptTemplate")
     public SystemPromptTemplate librarianSystemPromptTemplate() {
         return SystemPromptTemplate.builder()
                 .template("""
@@ -45,11 +47,11 @@ public class LibrarianChatClientConfig {
     }
 
     @Bean
-    @Qualifier("librarianChatClient")
+    @Qualifier("OllamaLibrarianChatClient")
     public ChatClient librarianChatClient(VectorStore vectorStore,
                                           ChatClient.Builder builder,
-                                          @Qualifier("librarianChatOptions") ChatOptions chatOptions,
-                                          @Qualifier("librarianSystemPromptTemplate") SystemPromptTemplate systemPromptTemplate) {
+                                          @Qualifier("OllamaLibrarianChatOptions") ChatOptions chatOptions,
+                                          @Qualifier("OllamaLibrarianSystemPromptTemplate") SystemPromptTemplate systemPromptTemplate) {
         return builder.defaultSystem(systemPromptTemplate.render())
                 .defaultOptions(chatOptions)
                 .defaultAdvisors(List.of(

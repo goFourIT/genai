@@ -5,7 +5,8 @@ spring:
       chat:
         model: llama3.2:3b
       embedding:
-        model: nomic-embed-text
+        options:
+          model: nomic-embed-text
     vectorstore:
       qdrant:
         host: localhost
@@ -27,6 +28,6 @@ spring:
 
 logging:
   level:
-    io.github.go4it.semanticsearch:
+    io.github.go4it.genai:
       advisor:
         LogAdvisor: DEBUG
