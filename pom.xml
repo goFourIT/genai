@@ -10,10 +10,9 @@
 	</parent>
 
 	<groupId>io.github.go4it</groupId>
-	<artifactId>semanticsearch</artifactId>
+	<artifactId>genai</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>semanticsearch</name>
-	<description>Demo semantic search project with spring boot</description>
+	<name>genai</name>
 
 	<properties>
 		<java.version>21</java.version>
